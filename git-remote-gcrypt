@@ -274,7 +274,7 @@ PUT_FINAL()
 	then
 		:
 	else
-		git push --quiet -f "${1#gitception://}" "$Gref:$Gref_rbranch"
+		git push --no-verify --quiet -f "${1#gitception://}" "$Gref:$Gref_rbranch"
 	fi
 }
 
